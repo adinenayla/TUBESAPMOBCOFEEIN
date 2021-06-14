@@ -155,7 +155,7 @@
         android:layout_marginLeft="50dp"
         android:layout_marginBottom="36dp"
         android:background="#9EEFE5"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintBottom_toTopOf="@+id/makeorder"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -181,7 +181,7 @@
         app:srcCompat="@drawable/coupon" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/makeorder"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="50dp"
@@ -189,7 +189,7 @@
         android:layout_marginLeft="50dp"
         android:layout_marginBottom="69dp"
         android:backgroundTint="#CE1B1B"
-        android:text="ORDER NOW  Rp 18.000"
+        android:text="MAKE ORDER  Rp 18.000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
