@@ -16,6 +16,7 @@ class Daftar:AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.create_account)
         // Initialize Firebase Auth
         auth = Firebase.auth
         val btn = findViewById<Button>(R.id.btnca)
@@ -39,6 +40,5 @@ class Daftar:AppCompatActivity() {
                     }
                 }
         }
-        setContentView(R.layout.create_account)
     }
 }
