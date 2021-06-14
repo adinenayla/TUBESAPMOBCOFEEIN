@@ -3,6 +3,7 @@ package com.example.tubesapmobcofeein
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
@@ -17,7 +18,8 @@ class Daftar:AppCompatActivity() {
         super.onCreate(savedInstanceState)
         // Initialize Firebase Auth
         auth = Firebase.auth
-        btnca.setOnClickListener {
+        val btn = findViewById<Button>(R.id.btnca)
+        btn.setOnClickListener {
             val email = edEmail.text.toString()
             val password = tvPassword.text.toString()
             auth.createUserWithEmailAndPassword(email, password)

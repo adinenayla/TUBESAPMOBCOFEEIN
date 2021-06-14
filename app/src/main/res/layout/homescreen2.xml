@@ -13,20 +13,22 @@
         android:fitsSystemWindows="true">
 
         <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            style="@style/Widget.MaterialComponents.AppBarLayout.PrimarySurface"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fitsSystemWindows="true"
-            style="@style/Widget.MaterialComponents.AppBarLayout.PrimarySurface">
+            android:fitsSystemWindows="true">
 
             <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/topAppBar_main"
+                style="@style/Widget.MaterialComponents.Toolbar.PrimarySurface"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                app:title="COFFEEIN"
-                app:navigationIcon="@drawable/menu"
                 android:background="@android:color/transparent"
                 android:elevation="0dp"
-                style="@style/Widget.MaterialComponents.Toolbar.PrimarySurface" />
+                app:navigationIcon="@drawable/menu"
+                app:title="COFFEEIN"
+                app:titleTextColor="#FFF"/>
         </com.google.android.material.appbar.AppBarLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -208,13 +210,12 @@
                 app:srcCompat="@drawable/coupon" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-        <com.google.android.material.navigation.NavigationView
-            android:id="@+id/dpl_navigation_view"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="start"
-            tools:layout_editor_absoluteX="35dp"
-            tools:layout_editor_absoluteY="0dp" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/dpl_navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="0dp" />
 </androidx.drawerlayout.widget.DrawerLayout>
