@@ -29,7 +29,7 @@ class Daftar:AppCompatActivity() {
                         // Sign in success, update UI with the signed-in user's information
                         Log.d("daftar", "createUserWithEmail:success")
                         val user = auth.currentUser
-                        val intent = Intent(this,MainActivity::class.java)
+                        val intent = Intent(this,Login::class.java)
                         startActivity(intent)
                         finish()
                     } else {

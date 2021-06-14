@@ -12,9 +12,14 @@ import com.google.firebase.ktx.Firebase
 class Login:AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var btnregis : Button
+    private lateinit var btnlg : Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login)
+        btnlg = findViewById(R.id.btnlogin)
+        btnlg.setOnClickListener {
+            startActivity(Intent(this,Homescreen::class.java))
+        }
         btnregis = findViewById(R.id.register)
         btnregis.setOnClickListener {
             startActivity(Intent(this,Daftar::class.java))
