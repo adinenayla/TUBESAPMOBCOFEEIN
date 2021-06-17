@@ -12,7 +12,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.create_account.*
-import kotlinx.android.synthetic.main.create_account.tvPassword
+import kotlinx.android.synthetic.main.create_account.edPassword
 
 class Daftar:AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
@@ -36,7 +36,7 @@ class Daftar:AppCompatActivity() {
                         Log.d("daftar", "createUserWithEmail:success")
                         val user = auth.currentUser
                         val datauser = hashMapOf(
-                            "nama"to nama,
+                            "nama" to nama,
                             "Tanggallahir" to tanggallahir
                         )
                         db.collection("Users").document(user!!.uid).set(datauser).addOnCompleteListener {
