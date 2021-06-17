@@ -2,12 +2,11 @@ package com.example.tubesapmobcofeein
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.PersistableBundle
+import android.util.Log
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.ktx.Firebase
+import kotlinx.android.synthetic.main.login.*
 
 class Login:AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
@@ -18,18 +17,23 @@ class Login:AppCompatActivity() {
         setContentView(R.layout.login)
         btnlg = findViewById(R.id.btnlogin)
         btnlg.setOnClickListener {
-            startActivity(Intent(this,Homescreen::class.java))
+            val email = edUsername.text.toString()
+            val password = edPassword.text.toString()
+            auth.signInWithEmailAndPassword(email,password)
+                .addOnCompleteListener(this) { task ->
+                    if (task.isSuccessful) {
+                        // Sign in success, update UI with the signed-in user's information
+                        Log.d("Login", "login Success")
+                        val user = auth.currentUser
+                        startActivity(Intent(this,Homescreen::class.java))}}
+                        .addOnFailureListener {
+                            Log.w("Login","Login Gagal",it)
+                        }
+
         }
         btnregis = findViewById(R.id.register)
         btnregis.setOnClickListener {
             startActivity(Intent(this,Daftar::class.java))
         }
-
-        // Initialize Firebase Auth
-        auth = Firebase.auth
-            // Check if user is signed in (non-null) and update UI accordingly.
-            val currentUser = auth.currentUser
-            if(currentUser != null){
-            }
     }
 }

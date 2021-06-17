@@ -31,7 +31,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:hint="Username"
+        android:hint="E-mail"
         android:layout_height="wrap_content">
 
         <androidx.appcompat.widget.AppCompatEditText
