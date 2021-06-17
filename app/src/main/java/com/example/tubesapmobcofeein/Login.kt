@@ -25,7 +25,9 @@ class Login:AppCompatActivity() {
                         // Sign in success, update UI with the signed-in user's information
                         Log.d("Login", "login Success")
                         val user = auth.currentUser
-                        startActivity(Intent(this,Homescreen::class.java))}}
+                        startActivity(Intent(this,Homescreen::class.java))
+                    }
+                }
                         .addOnFailureListener {
                             Log.w("Login","Login Gagal",it)
                         }

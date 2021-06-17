@@ -199,7 +199,7 @@
         android:layout_marginLeft="18dp"
         android:layout_marginBottom="15dp"
         android:text="Extra"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintBottom_toTopOf="@+id/addicemocca"
         app:layout_constraintStart_toEndOf="@+id/checkBox6" />
 
     <CheckBox
@@ -210,11 +210,11 @@
         android:layout_marginLeft="50dp"
         android:layout_marginBottom="15dp"
         android:text="Less"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintBottom_toTopOf="@+id/addicemocca"
         app:layout_constraintStart_toEndOf="@+id/checkBox7" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/addicemocca"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"

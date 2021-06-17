@@ -14,20 +14,20 @@
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appBarLayout"
-            style="@style/Widget.MaterialComponents.AppBarLayout.PrimarySurface"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fitsSystemWindows="true">
+            android:fitsSystemWindows="true"
+            style="@style/Widget.MaterialComponents.AppBarLayout.PrimarySurface"
+            >
 
             <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/topAppBar_main"
-                style="@style/Widget.MaterialComponents.Toolbar.PrimarySurface"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:background="@android:color/transparent"
-                android:elevation="0dp"
-                app:navigationIcon="@drawable/menu"
                 app:title="COFFEEIN"
+                android:elevation="0dp"
+                app:navigationIcon="@drawable/iconburger"
+                style="@style/Widget.MaterialComponents.Toolbar.PrimarySurface"
                 app:titleTextColor="#FFF"/>
         </com.google.android.material.appbar.AppBarLayout>
 

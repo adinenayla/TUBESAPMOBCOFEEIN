@@ -9,8 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TUBESAPMOBCOFEEIN.NoActionBar">
-        <activity android:name=".Homescreen"></activity>
-        <activity android:name=".Daftar"></activity>
+        <activity android:name=".Received"></activity>
+        <activity android:name=".Payment" />
+        <activity android:name=".Cart" />
+        <activity android:name=".Icematcha" />
+        <activity android:name=".Iceregal" />
+        <activity android:name=".Icemocca" />
+        <activity android:name=".Icecoffee" />
+        <activity android:name=".MenuLengkap" />
+        <activity android:name=".Homescreen" />
+        <activity android:name=".Daftar" />
         <activity android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
