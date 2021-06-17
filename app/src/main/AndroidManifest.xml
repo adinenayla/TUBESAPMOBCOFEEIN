@@ -10,7 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TUBESAPMOBCOFEEIN.NoActionBar">
         <activity android:name=".Homescreen"></activity>
-        <activity android:name=".MainActivity"></activity>
         <activity android:name=".Daftar"></activity>
         <activity android:name=".Login">
             <intent-filter>
