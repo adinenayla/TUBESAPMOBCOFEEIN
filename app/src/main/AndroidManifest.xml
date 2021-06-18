@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TUBESAPMOBCOFEEIN.NoActionBar">
-        <activity android:name=".Received"></activity>
+        <activity android:name=".Editaccount"></activity>
+        <activity android:name=".Account" />
+        <activity android:name=".Inbox" />
+        <activity android:name=".Received" />
         <activity android:name=".Payment" />
         <activity android:name=".Cart" />
         <activity android:name=".Icematcha" />

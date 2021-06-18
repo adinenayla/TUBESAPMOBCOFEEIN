@@ -45,7 +45,7 @@ class Daftar:AppCompatActivity() {
                             .addOnFailureListener {
                                 Log.w("daftar","Membuat Profil User Gagal",it)
                             }
-                        val intent = Intent(this,Login::class.java)
+                        val intent = Intent(this,Homescreen::class.java)
                         startActivity(intent)
                         finish()
                     } else {

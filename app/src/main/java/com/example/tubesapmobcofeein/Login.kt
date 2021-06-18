@@ -6,6 +6,7 @@ import android.util.Log
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.auth.User
 import kotlinx.android.synthetic.main.login.*
 
 class Login:AppCompatActivity() {
@@ -15,6 +16,7 @@ class Login:AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login)
+        auth = FirebaseAuth.getInstance()
         btnlg = findViewById(R.id.btnlogin)
         btnlg.setOnClickListener {
             val email = edUsername.text.toString()
@@ -24,7 +26,7 @@ class Login:AppCompatActivity() {
                     if (task.isSuccessful) {
                         // Sign in success, update UI with the signed-in user's information
                         Log.d("Login", "login Success")
-                        val user = auth.currentUser
+                        val User = auth.currentUser
                         startActivity(Intent(this,Homescreen::class.java))
                     }
                 }
