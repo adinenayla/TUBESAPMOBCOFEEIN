@@ -39,6 +39,7 @@ class Homescreen : AppCompatActivity() {
         btnhomehs = findViewById(R.id.homehs)
         btnhomehs.setOnClickListener {
             val intent = Intent(this,Homescreen::class.java)
+            startActivity(intent)
         }
     }
 }

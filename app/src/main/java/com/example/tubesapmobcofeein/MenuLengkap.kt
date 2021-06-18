@@ -4,6 +4,7 @@ import android.content.Intent
 import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 
 class MenuLengkap : AppCompatActivity() {
@@ -11,6 +12,7 @@ class MenuLengkap : AppCompatActivity() {
     private lateinit var btnim : ImageView
     private lateinit var btnir : ImageView
     private lateinit var btnimatcha :ImageView
+    private lateinit var btnback : Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.menulengkap)
@@ -29,6 +31,10 @@ class MenuLengkap : AppCompatActivity() {
         }
         btnimatcha.setOnClickListener {
             startActivity(Intent(this,Icematcha::class.java))
+        }
+        btnback = findViewById(R.id.kembalimenu)
+        btnback.setOnClickListener {
+            startActivity(Intent(this,Homescreen::class.java))
         }
     }
 }

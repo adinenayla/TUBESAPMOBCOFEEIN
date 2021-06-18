@@ -21,6 +21,7 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/kembalipayment"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:background="@drawable/kembali"

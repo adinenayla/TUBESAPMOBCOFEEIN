@@ -21,6 +21,7 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/kembaliacc"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:background="@drawable/kembali"
@@ -114,19 +115,6 @@
         app:layout_constraintStart_toEndOf="@+id/imageView15"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="62dp"
-        android:layout_marginLeft="62dp"
-        android:layout_marginTop="59dp"
-        android:ems="5"
-        android:text="Logout"
-        android:textColor="#FB7676"
-        app:layout_constraintStart_toEndOf="@+id/imageView16"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
-
     <ImageView
         android:id="@+id/imageView15"
         android:layout_width="40dp"
@@ -175,5 +163,23 @@
         android:textColor="#7E32DE"
         app:layout_constraintStart_toEndOf="@+id/imageView6"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginLeft="63dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginBottom="135dp"
+        android:background="@android:color/transparent"
+        android:text="logout"
+        android:textColor="#CE1B1B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView16"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
